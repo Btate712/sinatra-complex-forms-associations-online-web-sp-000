@@ -7,7 +7,7 @@
   <p>
     <% @owners.each do |owner| %>
       <input type="checkbox" name="pet[owner_id]" value="<%= owner.id %>"
-        id="<%= owner.id %>" ><%="checked" if @pet.owner == owner %>
+        id="<%= owner.id %>" <%="checked" if @pet.owner == owner %> >
         <%= owner.name %></input>
     <% end %>
   </p>
