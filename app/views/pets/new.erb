@@ -2,7 +2,7 @@
 
 <form method="POST" action="/pets">
   <p><label for="pet_name">Pet Name:</label>
-    <input type="index" name="pet_name" id="pet_name">
+    <input type="index" name="pet[name]" id="pet_name">
   </p>
   <p>
     <% @owners.each do |owner| %>
